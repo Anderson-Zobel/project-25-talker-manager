@@ -16,6 +16,11 @@ app.get(
   controllers.getTalker,
 );
 
+app.get(
+  '/talker/:id',
+  controllers.getTalkerById,
+);
+
 // UPDATE
 
 // DELETE
