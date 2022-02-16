@@ -8,6 +8,7 @@ module.exports = (req, res, next) => {
     if (authorization.length !== 16) {
     return res.status(401).json({ message: 'Token inválido' });
   }
+  console.log(authorization);
   return next();
   } catch (e) {
     return next(e);

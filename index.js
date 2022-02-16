@@ -54,6 +54,11 @@ app.put(
   );
 
 // DELETE
+app.delete(
+  '/talker/:id',
+  middlewares.validateTalkerToken,
+  controllers.deleteTalker,
+);
 
 const HTTP_OK_STATUS = 200;
 const PORT = '3000';
