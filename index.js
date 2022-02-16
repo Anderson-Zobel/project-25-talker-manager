@@ -36,9 +36,16 @@ app.post(
 );
 
 // READ
+
 app.get(
   '/talker',
   controllers.getTalker,
+);
+
+app.get(
+  '/talker/search',
+  middlewares.validateTalkerToken,
+  controllers.queryTalker,
 );
 
 app.get(
