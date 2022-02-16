@@ -8,19 +8,32 @@ app.use(bodyParser.json());
 const middlewares = require('./middlewares');
 const controllers = require('./controllers');
 
-const validationMiddlewares = [
+const validateLogin = [
   middlewares.validateEmail,
   middlewares.validatePass,
 ];
 
-// CREATE
-// const token = crypto.createHash('md5').update('1234').digest('hex');
+const validateTalker = [
+  middlewares.validateTalkerToken,
+  middlewares.validateTalkerName,
+  middlewares.validateTalkerAge,
+  middlewares.validateTalkerTalk,
+  middlewares.validateTalkerWatchedAt,
+  middlewares.validateTalkerRate,  
+];
 
+// CREATE
 app.post(
   '/login',
-  validationMiddlewares,
+  validateLogin,
   middlewares.token,
   );
+
+app.post(
+  '/talker',
+  validateTalker,
+  controllers.postTalker,
+);
 
 // READ
 app.get(
