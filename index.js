@@ -47,6 +47,11 @@ app.get(
 );
 
 // UPDATE
+app.put(
+  '/talker/:id',
+  validateTalker,
+  controllers.putTalker,
+  );
 
 // DELETE
 
