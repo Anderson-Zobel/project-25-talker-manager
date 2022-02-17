@@ -6,7 +6,7 @@ module.exports = async (req, res, next) => {
     const { name, age, talk } = req.body;
 
     const talker = JSON.parse(await readFile('./talker.json', 'utf8'));
-    const filteredTalker = talker.filter((t) => Number(t.id) !== Number(id));
+    const filteredTalker = talker.filter((t) => Number(t.id) === Number(id));
 
     const updateTalker = { id: Number(id), name, age, talk };
 
