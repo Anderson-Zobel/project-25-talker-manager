@@ -29,8 +29,8 @@ O objetivo desse projeto era desenvolver uma API de palestrantes utilizando CRUD
 1. Instale as dependências
 - `npm install`
 
-2. Para utilizar diretamente
+2. Para executar
 - `npm start`
 
-3. Utilzando com Nodemon
+3. Executando com Nodemon
 - `npm run dev`
