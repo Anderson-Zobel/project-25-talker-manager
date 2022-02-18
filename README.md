@@ -24,9 +24,9 @@ O objetivo desse projeto era desenvolver uma API de palestrantes utilizando CRUD
 - Entender a estrutura de uma aplicação Express e como organizar seu código;
 - Criar rotas e aplicar middlewares.
 
-## Dependências (para uso local) 
+## Executando localmente
 
-1.Instalando as dependências
+1.Instale as dependências
 - `npm install`
 
 2.Para utilizar diretamente
