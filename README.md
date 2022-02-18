@@ -26,22 +26,11 @@ O objetivo desse projeto era desenvolver uma API de palestrantes utilizando CRUD
 
 ## Dependências (para uso local) 
 
-1.Gerenciador de pacotes Node
+1.Instalando as dependências
 - `npm install`
 
-2.Express
-- `npm install express`
-
-3.Body-parser
-- `npm install body-parser`
-
-4.Nodemon (opcional)
-- `npm install nodemon`
-
-### Executando a aplicação
-
-Para utilizar diretamente
+2.Para utilizar diretamente
 - `npm start`
 
-Utilzando com Nodemon
+3.Utilzando com Nodemon
 - `npm run dev`
